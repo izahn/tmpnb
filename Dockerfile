@@ -1,7 +1,6 @@
-FROM python:3.4-wheezy
+FROM python:3-stretch
 
-RUN apt-get update && apt-get install python-dev libcurl4-openssl-dev -y
-RUN pip install --upgrade pip
+RUN apt-get update && apt-get install python3-dev libcurl4-openssl-dev -y
 
 RUN mkdir -p /srv/tmpnb
 WORKDIR /srv/tmpnb/
